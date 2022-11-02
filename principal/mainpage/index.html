@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Key Features">
+    <meta name="description" content="">
+    <title>Química - Funções Orgânicas</title>
+    <link rel="shortcut icon" type="x-icon" href="../mainpage/images/icon.jpg">
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.18.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #262626;
+  width: 100%;
+  height: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 77px;
+}
+
+.button a{
+  color: white;
+}
+.button {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 30px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+    transition: all .1s ease-in-out;
+  }
+  
+}
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent; 
+  margin: 30px auto 0 auto;
+  border: solid 2px #424242;
+  border-top: solid 2px #1c89ff;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.check {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(-4px,50px,0);
+  opacity: 0;
+  span:nth-child(1) {
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+  span:nth-child(2) {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg) translate3d(14px, -4px, 0);
+    transform-origin: 100%;
+  }
+}
+
+.loader.active {
+  animation: loading 2s ease-in-out; 
+  animation-fill-mode: forwards;
+}
+
+.check.active {
+  opacity: 1;
+  transform: translate3d(-4px,4px,0);
+  transition: all .5s cubic-bezier(.49, 1.74, .38, 1.74);
+  transition-delay: .2s;
+}
+
+@keyframes loading {
+  30% {
+    opacity:1; 
+  }
+  
+  85% {
+    opacity:1;
+    transform: rotate(1080deg);
+    border-color: #262626;
+  }
+  100% {
+    opacity:1;
+    transform: rotate(1080deg);
+     border-color: #1c89ff;
+  }
+}
+
+
+.u-palette-5-dark-2, .u-body.u-palette-5-dark-2, 
+        section.u-palette-5-dark-2:before, .u-palette-5-dark-2 > .u-container-layout:before, 
+        .u-palette-5-dark-2 > .u-inner-container-layout:before, .u-palette-5-dark-2.u-sidenav:before, 
+        .u-container-layout.u-container-layout.u-palette-5-dark-2:before, .u-table-alt-palette-5-dark-2 tr:nth-child(even){
+        width: 100%;
+        height: 270px;
+
+}
+
+
+
+
+    
+      @media (max-width: 580px) {
+        .u-palette-5-dark-2, .u-body.u-palette-5-dark-2, 
+        section.u-palette-5-dark-2:before, .u-palette-5-dark-2 > .u-container-layout:before, 
+        .u-palette-5-dark-2 > .u-inner-container-layout:before, .u-palette-5-dark-2.u-sidenav:before, 
+        .u-container-layout.u-container-layout.u-palette-5-dark-2:before, .u-table-alt-palette-5-dark-2 tr:nth-child(even){
+        width: 100%;
+        height: 250px;
+    }
+    .button{
+      position: relative;
+      top: 55px;
+    }
+
+    }
+
+
+    @media (max-width: 769px) {
+        .u-palette-5-dark-2, .u-body.u-palette-5-dark-2, 
+        section.u-palette-5-dark-2:before, .u-palette-5-dark-2 > .u-container-layout:before, 
+        .u-palette-5-dark-2 > .u-inner-container-layout:before, .u-palette-5-dark-2.u-sidenav:before, 
+        .u-container-layout.u-container-layout.u-palette-5-dark-2:before, .u-table-alt-palette-5-dark-2 tr:nth-child(even){
+        width: 100%;
+        height: 250px;
+    }
+    .button{
+      position: relative;
+      top: 55px;
+    }
+
+    }
+
+    @media (max-width: 994px) {
+        .u-palette-5-dark-2, .u-body.u-palette-5-dark-2, 
+        section.u-palette-5-dark-2:before, .u-palette-5-dark-2 > .u-container-layout:before, 
+        .u-palette-5-dark-2 > .u-inner-container-layout:before, .u-palette-5-dark-2.u-sidenav:before, 
+        .u-container-layout.u-container-layout.u-palette-5-dark-2:before, .u-table-alt-palette-5-dark-2 tr:nth-child(even){
+        width: 100%;
+        height: 270px;
+    }
+    .button{
+      position: relative;
+      top: 0px;
+    }
+
+    }
+
+    .box{ 
+      background-color: #333333;
+      
+    }
+    nav, header{
+      background-color:  #333333;
+      color: white;
+    
+     }
+     #icondiv{
+      width: 300%;
+      position: relative;
+      top: 5px;
+      border-radius: 10px;
+      border: #333333 2px solid;
+     }
+
+     #img{
+       width: 80%;
+       height: 120px;
+       position: relative;
+       left: 9.2%;
+       top: 20px;
+       border: #333333 0.5px solid;
+       
+     }
+
+     #img1{
+       width: 80%;
+       height: 120px;
+       position: relative;
+       left: 9.2%;
+       top: 20px;
+       border: #333333 0.5px solid;
+       background: white;
+       
+     }
+
+    </style>
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-deb5"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <a href="" class="u-image u-logo u-image-1">
+      <img src="../mainpage/images/icon.jpg" class="u-logo-image u-logo-image-1" id="icondiv">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Início</a>
+</li></ul>
+          </div>
+          <div class="u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html">Início</a>
+
+
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-center u-clearfix u-palette-5-dark-3 u-section-1" id="carousel_baf6">
+      <div class="box">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-text u-text-1">Funções Orgânicas</h2>
+        <p class="u-text u-text-palette-5-dark-1 u-text-2">IFPA - Campus Bragança, TDS 2020, Prof. Gisele Ramos</p>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-1">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <h4 class="u-text u-text-3">HIDROCARBONETOS</h4>
+                <img src="../mainpage/images/hidrocarbonetos.png" id="img1">
+                <div class="main">
+                  <button class="button"><a href="../content/second.html">Acessar</button></a>
+                  
+                  <div class="loader">
+                    <div class="check">
+                      <span class="check-one"></span>
+                      <span class="check-two"></span>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <h4 class="u-text u-text-4">ÁLCOOL</h4>
+                <img src="../mainpage/images/alcool.jpg" id="img">
+                <div class="main">
+                  <button class="button"><a href="../main/third.html">Acessar</button></a>
+                  
+                  
+                  <div class="loader">
+                    <div class="check">
+                      <span class="check-one"></span>
+                      <span class="check-two"></span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <h4 class="u-text u-text-4">ÉTER</h4>
+                <img src="../mainpage/images/eter.jpg" id="img">
+                <div class="main">
+                  <button class="button"><a href="../main/third.html">Acessar</button></a>
+                  
+                  
+                  <div class="loader">
+                    <div class="check">
+                      <span class="check-one"></span>
+                      <span class="check-two"></span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-3">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                <h4 class="u-text u-text-5">FENOL</h4>
+                <img src="../mainpage/images/fenol.jpg" id="img">
+                <div class="main">
+                  <button class="button"><a href="../main/four.html">Acessar</button></a>
+                  
+                  
+                  <div class="loader">
+                    <div class="check">
+                      <span class="check-one"></span>
+                      <span class="check-two"></span>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-4">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+                <h4 class="u-text u-text-6">ÁCIDOS CARBOXÍLICOS</h4>
+                <img src="../mainpage/images/acidocarboxilico.jpg" id="img1">
+                <div class="main">
+                  <button class="button"><a href="../main/five.html">Acessar</button></a>
+                  
+                  
+                  <div class="loader">
+                    <div class="check">
+                      <span class="check-one"></span>
+                      <span class="check-two"></span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-5">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+                <h4 class="u-text u-text-7">ÉSTER</h4>
+                <img src="../mainpage/images/ester.jpg" id="img">
+                <div class="main">
+                  <button class="button"><a href="../main/six.html">Acessar</button></a>
+                  
+                  
+                  <div class="loader">
+                    <div class="check">
+                      <span class="check-one"></span>
+                      <span class="check-two"></span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-6">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6">
+                <h4 class="u-text u-text-8">AMINA</h4>
+                <img src="../mainpage/images/amina.jpg" id="img1">
+                <div class="main">
+                  <button class="button"><a href="../main/seven.html">Acessar</button></a>
+                  
+                  
+                  <div class="loader">
+                    <div class="check">
+                      <span class="check-one"></span>
+                      <span class="check-two"></span>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          
+         
+
+          <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-5">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+              <h4 class="u-text u-text-7">AMIDA</h4>
+              <img src="../mainpage/images/amida.jpg" id="img">
+              <div class="main">
+                <button class="button"><a href="../main/six.html">Acessar</button></a>
+                
+                
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+
+          
+          <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-5">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+              <h4 class="u-text u-text-7">NITROCOMPOSTO</h4>
+              <img src="../mainpage/images/nitrocomposto.jpg" id="img">
+              <div class="main">
+                <button class="button"><a href="../main/six.html">Acessar</button></a>
+                
+                
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+          
+
+          <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-5">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+              <h4 class="u-text u-text-7">ALDEÍDO</h4>
+              <img src="../mainpage/images/aldeido.jpg" id="img1">
+              <div class="main">
+                <button class="button"><a href="../main/six.html">Acessar</button></a>
+                
+                
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+          <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-60 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-5">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+              <h4 class="u-text u-text-7">CETONA</h4>
+              <img src="../mainpage/images/cetona.jpg" id="img">
+              <div class="main">
+                <button class="button"><a href="../main/six.html">Acessar</button></a>
+                
+                
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-cf94"><div class="u-clearfix u-sheet u-sheet-1">
+      <h4 class="u-small-text u-text u-text-variant u-text-1">Desenvolvedores<BR> Bruno Ferrari e Edilan Reis<br>Copyright © XONG 2022</h4>
+    </div></footer>
+
+  
+</body></html>
