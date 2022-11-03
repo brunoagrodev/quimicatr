@@ -4,7 +4,8 @@
  * Copyright 2014-2021 Froala Labs
  */
 
- 
+
+
 
 .fr-clearfix::after {
   clear: both;
@@ -13308,6 +13309,8 @@ section.u-image:not(.u-hover-box),
   width: 100%;
   height: 100%;
   fill: currentColor;
+  bottom: 15px;
+  position: relative;
 }
 .u-svg-content {
   width: 0;
@@ -16004,7 +16007,7 @@ div.u-video,
 .u-nav-container > .u-nav > .u-nav-item > .u-nav-link {
   padding: 10px 20px;
   position: relative;
-  bottom: 9.7px;
+  bottom: 12px;
   
 }
 .menu-collapse {
