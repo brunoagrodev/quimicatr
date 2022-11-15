@@ -19596,10 +19596,17 @@ a.pswp__share--download:hover {
   flex-shrink: 1;
   flex-basis: auto;
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
   padding-block: 50px;
 
 }
+ footer{
+      position: relative;
+      bottom: 120px;
+     }
+     .u-body {
+     height: 500px;
+     }
 .u-list:not(.u-repeater) .u-list-control,
 .u-blog:not(.u-repeater) .u-list-control,
 .u-products:not(.u-repeater) .u-list-control {
