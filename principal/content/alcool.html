@@ -232,9 +232,19 @@
                 <p class="u-text u-text-body-alt-color u-text-12">
                 </p>
 
-                <video width="320" height="240" controls id="videofile">
-                  <source src="movie.mp4" type="video/mp4">
-                </video>
+                <iframe  src="https://www.youtube.com/embed/GVHMo71V9A8" id="videofile"></iframe>
+                <script>
+                   var elem = document.getElementById("videofile");
+                   if (elem.requestFullscreen) {
+                   elem.requestFullscreen();
+                   } else if (elem.mozRequestFullScreen) {
+                   elem.mozRequestFullScreen();
+                   } else if (elem.webkitRequestFullscreen) {
+                   elem.webkitRequestFullscreen();
+                   } else if (elem.msRequestFullscreen) { 
+                   elem.msRequestFullscreen();
+                   }
+                </script>
                 
               </div>
             </div>
