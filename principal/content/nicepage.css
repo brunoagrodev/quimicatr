@@ -16,7 +16,12 @@
  width: 100%;
  font-size: 2rem
  }
+ 
 }
+
+ 
+
+
 
 
 .fr-clearfix::after {
@@ -19608,17 +19613,33 @@ a.pswp__share--download:hover {
   flex-shrink: 1;
   flex-basis: auto;
   position: relative;
-  bottom: 125px;
+  bottom: 105px;
   padding-block: 100px;
 
 }
+@media (min-width: 991px){
+  .u-list:not(.u-repeater) .u-repeater,
+.u-blog:not(.u-repeater) .u-repeater,
+.u-products:not(.u-repeater) .u-repeater{
+ position: relative;
+ bottom: 130px;
+ padding-bottom: 0px;
+ 
+}
+footer{
+  position: relative;
+  bottom: 100px;
+}
+}
+
  footer{
       position: relative;
       bottom: 200px;
      }
      .u-body {
-     height: 500px;
+     height: 400px;
      }
+     
 .u-list:not(.u-repeater) .u-list-control,
 .u-blog:not(.u-repeater) .u-list-control,
 .u-products:not(.u-repeater) .u-list-control {
@@ -38004,7 +38025,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-text-1 {
   width: 417px;
-  margin: 49px auto;
+  margin: 30px auto;
 }
 @media (max-width: 1199px) {
   .u-footer .u-sheet-1 {
